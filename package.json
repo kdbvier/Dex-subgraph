@@ -1,0 +1,22 @@
+{
+  "name": "Mypancake",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ vigorousdeveloper/Mypancake",
+    "create-local": "graph create --node http://localhost:8020/ vigorousdeveloper/Mypancake",
+    "remove-local": "graph remove --node http://localhost:8020/ vigorousdeveloper/Mypancake",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 vigorousdeveloper/Mypancake"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.0",
+    "@graphprotocol/graph-ts": "0.20.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.2"
+  }
+}
